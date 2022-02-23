@@ -106,6 +106,10 @@
         display: block;
         z-index: 999;
     }
+    /* add closing 'X' for the toggle menu  */
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
     .navbar .menu {
         position: fixed;
         background: #111;
