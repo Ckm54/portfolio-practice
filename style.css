@@ -51,11 +51,15 @@ html {
     color: #fff;
 }
 .navbar .menu li a {
+    display: block;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+}
+.hide {
+    display: none;
 }
 .navbar .menu li a:hover {
     color: crimson;
@@ -66,7 +70,6 @@ html {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
-    display: none;
 }
 .scroll-up-btn {
     position: fixed;
