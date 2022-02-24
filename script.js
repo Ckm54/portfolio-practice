@@ -3,8 +3,9 @@ $(document).ready(function(){
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
-            $('navbar').removeClass("sticky");
+            $('.navbar').removeClass("sticky");
         }
+
         if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
         } else {
@@ -21,6 +22,21 @@ $(document).ready(function(){
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
+    });
+
+    // typing animation script 
+    var typed = new Typed(".typing", {
+        strings: ["Youtuber", "Blogger", "Web Developer", "Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Youtuber", "Blogger", "Web Developer", "Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
     })
 
     // owl carousel script 
